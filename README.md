@@ -87,6 +87,8 @@ Early beta (0.x). The wire format follows the RFed spec's "CANONICAL WIRE
 FORMAT" and cross-validates with `@reticulum/core` (JS) and the Rust
 reference node, but the RFed protocol itself is still evolving.
 
+Implemented with LLM assistance.
+
 ## License
 
-EUPL-1.2, same as Dacar and Reticulum.
+EUPL-1.2, same as Dacar and reticulum-js.
