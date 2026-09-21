@@ -1,0 +1,75 @@
+# ---------------------------------------------------------------------------
+# OS / editor
+# ---------------------------------------------------------------------------
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+.*.swp
+.*.swo
+*~
+*.bak
+
+.idea/
+.vscode/
+.fleet/
+.nbproject/
+*.tmproj
+*.tmproject
+
+# ---------------------------------------------------------------------------
+# Logs & databases
+# ---------------------------------------------------------------------------
+*.log
+logs/
+
+# ---------------------------------------------------------------------------
+# Secrets / local environment
+# ---------------------------------------------------------------------------
+.env
+.env.*
+!.env.example
+
+# ---------------------------------------------------------------------------
+# Python
+# ---------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+build/
+dist/
+*.egg
+*.egg-info/
+.eggs/
+develop-eggs/
+MANIFEST
+
+.venv/
+venv/
+env/
+ENV/
+
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.pytype/
+.tox/
+.nox/
+.hypothesis/
+
+.coverage
+.coverage.*
+coverage.xml
+*.lcov
+htmlcov/
+*.cover
+
+pip-log.txt
+pip-delete-this-directory.txt

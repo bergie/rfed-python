@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rfed"
+version = "0.1.0"
+description = "Python client for RFed (Reticulum Federation) channels"
+readme = "README.md"
+license = { text = "EUPL-1.2" }
+requires-python = ">=3.9"
+authors = [{ name = "Henri Bergius" }]
+keywords = ["reticulum", "rns", "rfed", "federation", "lxmf", "mesh", "offline", "pubsub"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: European Union Public Licence 1.2 (EUPL 1.2)",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Communications",
+    "Topic :: System :: Networking",
+]
+dependencies = [
+    # LXMF-tail msgpack payload codec.
+    "msgpack>=1.0",
+    # Reticulum Network Stack: destinations, links, requests, crypto
+    # (pulls in `cryptography`). 1.5.4 pairs with the @reticulum/* 0.8.2
+    # wire protocol (rfed link publishes, pull error codes).
+    "rns>=1.5.4",
+]
+
+[project.urls]
+Homepage = "https://github.com/bergie/rfed-python"
+Repository = "https://github.com/bergie/rfed-python"
+Issues = "https://github.com/bergie/rfed-python/issues"
+Changelog = "https://github.com/bergie/rfed-python/releases"
+Specification = "https://github.com/jrl290/RFed"
+Related = "https://github.com/bergie/dacar"
+
+[tool.setuptools]
+packages = ["rfed"]
